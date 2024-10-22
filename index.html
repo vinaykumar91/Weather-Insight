@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather Insight</title>
+    <link rel="icon" href="./images/meteorology.png" style="filter:brightness(0.7)"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body>
+    <h2><span style="color:red">W</span>eather <span style="color:red">I</span>nsight</h2>
+    <div class="container">
+      <div class="search">
+        <div class="search-box">
+          <input type="text" placeholder="Enter City Name" spellcheck="false" />
+          <button><img src="images/search.png" alt="" /></button>
+        </div>
+        <p>or</p>
+        <div class="live-location">
+          <button><i class="fa-solid fa-location-dot"></i>Live Location</button>
+        </div>
+      </div>
+      <div class="error">
+        <p>Invalid City Name</p>
+        <img src="./images/error404.png" alt="error">
+      </div>
+      <div class="weather">
+        <div class="go-back">
+          <button><i class="fa-solid fa-arrow-left" style="margin-right:15px;"></i>Go Back</button>
+        </div>
+        <div class="weather-box">
+          <div class="box1">
+            <img src="images/drizzle.png" class="weather-icon" alt="weather-icon" />
+            <div class="head">
+              <h3 class="description">Clouds</h3>
+              <h1 class="temp">22°C</h1>
+            </div>
+          </div>
+          <div class="city-name">
+              <i class="fa-solid fa-location-dot"></i>
+              <h2 class="city">Hyderabad</h3>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+              <img src="./images/humidity.png" style="filter: invert(1) brightness(0.7) grayscale(1);" alt="">
+              <div class="humidity-details">
+                  <h4 class="humidity-value">85%</h4>
+                  <h5>Humidity</h4>
+              </div>
+          </div>
+          <div class="wind-speed">
+              <img src="./images/wind.png" style="filter: invert(1) brightness(0);" alt="">
+              <div class="Wind-speed-details">
+                  <h4 class="wind-value">20 km/h</h4>
+                  <h5>Wind-speed</h4>
+              </div>
+          </div>
+          <div class="Pressure Pressure-set">
+              <img src="./images/pressure.png" style="filter: invert(1) brightness(0);" alt="">
+              <div class="Pressure-details">
+                  <h4 class="pressure-value">1000mb</h4>
+                  <h5>Pressure</h4>
+              </div>
+          </div>
+          <div class="Visibility Visibility-set">
+              <img src="./images/visibility.png" style="filter: invert(1) brightness(0);" alt="">
+              <div class="Visibility-details">
+                  <h4 class="visibility-value">8 kms</h4>
+                  <h5>Visibility</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
